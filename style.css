@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Commissioner:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +29,55 @@ background-position: center;
 
   }
 }
+/* 3d web  */
+#video-container {
+  position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+#video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+/* 
+background-size: cover;
+overflow-y: hidden;
+overflow-x: hidden; */
+display: none;
+}
+
+#enter-button {
+position: absolute;
+font-size: 24px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#website-content{
+  #website-content 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+/* From Uiverse.io by kennyotsu */ 
+/*works janky on mobile :<*/
 .container-noselect {
 display: none;
 }
@@ -86,7 +133,7 @@ display: none;
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: #f00;
+  color: rgb(97, 96, 96);
 }
 #menu-icon {
   font-size: 36px;
@@ -213,14 +260,13 @@ background: linear-gradient(to right, #ff0000, #00ff00);
   
   .flip-card-front {
       background: linear-gradient(120deg, rgb(255, 232, 224,1) 30%, #19283B 88%, #B8B9C1 40%, rgb(255, 185, 160) 78%);
-    color: coral;
-}
+     color: coral;
+    }
   
   .flip-card-back {
     background: linear-gradient(120deg,#B8B9C1 60%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
     transform: rotateY(180deg);
   }
-
 /* INFO */
 h1{
   position: relative;
@@ -673,6 +719,7 @@ width: auto;
 }
 /* LOADER */
 
+/* From Uiverse.io by andrew-demchenk0 */ 
 #loader {
   position: relative;
   width: 300px;
@@ -755,6 +802,7 @@ display: none;
   transform: rotateX(90deg) translateZ(-40px);
   filter: blur(12px);
 }
+/* From Uiverse.io by andrew-demchenk0 
 .container {
   position: relative;
   width: 250px;
@@ -805,7 +853,7 @@ display: none;
   left: 0; */
 
 /* CONTACT */
-.container{
+.cont{
   background: ;
 	position: relative;
 	width: 100%;
@@ -816,7 +864,7 @@ display: none;
 	padding: 20px 100px;
 }
 
-.container:after{
+.cont:after{
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -828,7 +876,7 @@ display: none;
 	filter: blur(50px);
 	z-index: -1;
 }
-.contact-box{
+#contact-box{
 	max-width: 850px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -876,7 +924,7 @@ display: none;
 
 
 h2{
-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
@@ -949,8 +997,8 @@ textarea{
     0deg,
     rgba(94, 58, 238, 1) 0%,
     rgba(197, 107, 240, 1) 100%
-  );
-
+    );
+    
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: #2ecc71;
@@ -987,9 +1035,10 @@ textarea{
 }
 
 #gmail:hover{
-  background: url(https://mail.google.com/mail/u/3/#inbox);
+  background: url(https://app.spline.design/community);
 }
-	#intro-screen{
+
+#intro-screen{
   position: fixed;
    z-index: 9999; 
   top: 0; 
@@ -1011,13 +1060,15 @@ textarea{
     padding: 12px 24px;
      font-size: 90px;
      margin-top: 20px; 
+      font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     cursor: pointer;
 color:white;
 letter-spacing: 15px;
 text-transform: uppercase;
 text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
-
 @media (max-width: 768px) {
   /* Mobile ke liye styles */
  
@@ -1034,7 +1085,7 @@ text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px
     height: 240px;
     margin-top: 150px;
     display: none;
-  
+    
   }
   .back{
     display: none;
@@ -1043,7 +1094,7 @@ text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px
     height: 350px;
     margin-left: 62px;
   }
-.backward{
+  .backward{
   display: block;
   margin-top: 60px;
     width: 450px;
@@ -1099,6 +1150,8 @@ margin-top: -4px;
   .timeline-column .title {
     font-size: 21px;
   }
+/* From Uiverse.io by kennyotsu */ 
+/*works janky on mobile :<*/
 .container-noselect {
 display: block;
 margin-top: -10px;
@@ -1125,7 +1178,7 @@ margin-top: -10px;
   border-radius: 20px;
   transition: 700ms;
   background: linear-gradient(120deg, rgb(255, 232, 224,1) 30%, #19283B 88%, #B8B9C1 40%, rgb(255, 185, 160) 78%);
-
+  
 }
 
 .subtitle {
@@ -1166,7 +1219,7 @@ background: linear-gradient(to right, #ff0000, #00ff00);
   transition: 300ms ease-in-out-out;
   position: absolute;
   max-width: 140px;
-color: #fff;
+  color: #fff;
 }
 #prompt:hover{
   opacity: 0;
@@ -1477,7 +1530,7 @@ color: #fff;
   font-size: 15px;
   margin: 5px 0;
 }
-.contact-box{
+#contact-box{
 		grid-template-columns: 1fr;
     margin-left: 60px;
 	}
@@ -1495,18 +1548,24 @@ color: #fff;
       margin-top: 5px;
       margin-left: 40px;
   }
+  
+  
   #intro-video{
    width: 101%;
     height: 106%;
   object-fit: cover;
   }
   #intro-screen{
-     background: url(./img/intro-bg\ 2.jpg);
+ background: url(./img/intro-bg\ 2.jpg);
 background-size: cover;
 width:101%;
 height:106%
- }
-}
+ } 
+  }
+
+
+
+
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Tablet ke liye styles */
   .header {
@@ -1543,7 +1602,7 @@ height:106%
     width: 45%;
     margin: 20px;
   }
-  .content-box, .content-box2, .content-box3 {
+  #content-box, .content-box2, .content-box3 {
     padding: 45px 20px 20px 20px;
   }
 }
