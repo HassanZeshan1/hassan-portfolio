@@ -15,3 +15,17 @@ menuIcon.addEventListener('click', () => {
 });
 
 
+const introScreen = document.getElementById("intro-screen");
+  const enterButton = document.getElementById("enter-button");
+  const video = document.getElementById("intro-video");
+  const mainContent = document.body;
+
+  enterButton.addEventListener("click", () => {
+    enterButton.style.display = "none";
+    video.style.display = "block";
+    video.play();
+  });
+
+  video.addEventListener("ended", () => {
+    introScreen.style.display = "none";
+  });
