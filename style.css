@@ -54,14 +54,6 @@ overflow-x: hidden; */
 display: none;
 }
 
-#enter-button {
-position: absolute;
-font-size: 24px;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
 
 #website-content{
   #website-content 
@@ -1051,6 +1043,7 @@ textarea{
    align-items: center; 
    flex-direction: column;
    background-size: cover;
+   backdrop-filter: ;
   }
   #intro-video{
     display: none;
@@ -1169,8 +1162,7 @@ margin-top: -4px;
   .timeline-column .title {
     font-size: 21px;
   }
-/* From Uiverse.io by kennyotsu */ 
-/*works janky on mobile :<*/
+
 .container-noselect {
 display: block;
 margin-top: -10px;
