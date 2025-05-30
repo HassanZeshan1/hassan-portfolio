@@ -1063,11 +1063,11 @@ textarea{
       font-family: "Abel", sans-serif;
   font-weight: 400;
   font-style: normal;
-    cursor: pointer;
+  cursor: pointer;
 color:white;
 letter-spacing: 15px;
 text-transform: uppercase;
-	  text-shadow: -5px 1px 9px rgba(0,0,0,1),
+text-shadow: -5px 1px 9px rgba(0,0,0,1),
              -5px 1px 9px rgba(0,0,0,1),
              -5px 1px 9px rgba(0,0,0,1),
              -5px 1px 9px rgba(0,0,0,1),
@@ -1088,7 +1088,6 @@ text-shadow: -5px 1px 9px rgba(0,0,0,1),
             transition: 5ms;
             }          
 
-  }
 @media (max-width: 768px) {
   /* Mobile ke liye styles */
  
