@@ -1,6 +1,7 @@
-if(window.matchMedia("(max-innerWidth:786)").matches){
-    alert("Please Zoom Out First For Better Experience")
+if (window.matchMedia("(max-width: 768px)").matches) {
+  alert("Please Zoom Out First For Better Experience!");
 }
+
 var loader = document.getElementById("loader");
 
 window.addEventListener("load" , function(){
